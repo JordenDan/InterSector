@@ -9,7 +9,6 @@ namespace InterSector {	namespace DataDefine {
 
 class Sector {
 public:
-	Sector(const Arc & arc);
 	virtual ~Sector() throw();
 	virtual const LineSeg & startLine() const = 0;
 	virtual const LineSeg & endLine() const = 0;
@@ -17,7 +16,7 @@ public:
 	virtual const Point & center() const = 0;
 	virtual double radius() const = 0;
 public:
-	static std::auto_ptr<Sector> create(
+	static ::std::shared_ptr<Sector> create(
 		const Point & center, double R, double angleStartR, double angleEndR);
 };
 

@@ -8,6 +8,9 @@ LineSeg::LineSeg(const Point & _start, const Point & _end)
 LineSeg::LineSeg(double xStart, double yStart, double xEnd, double yEnd)
 	: start(xStart, yStart), end(xEnd, yEnd) {}
 
+LineSeg::LineSeg()
+	: start(), end() {}
+
 const Vector LineSeg::UnitDir() const {
 	Vector vecDir = end - start;
 	return vecDir / norm(vecDir);

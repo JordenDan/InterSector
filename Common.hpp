@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ostream>
 #include <cmath>
+#include <memory>
 
 namespace InterSector {
 

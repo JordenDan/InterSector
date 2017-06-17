@@ -9,6 +9,7 @@ namespace InterSector {	namespace DataDefine {
 struct LineSeg {
 	LineSeg(const Point & start, const Point & end);
 	LineSeg(double xStart, double yStart, double xEnd, double yEnd);
+	LineSeg();
 	const Vector UnitDir() const;
 	Point start, end;
 };
